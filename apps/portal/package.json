@@ -2,6 +2,15 @@
   "name": "portal",
   "version": "0.1.0",
   "private": true,
+  "description": "The employee management portal",
+  "author": "Murshid Azher <hello@murshidazher.com>",
+  "homepage": "https://github.com/murshidazher/employee-manager-ui/tree/main/apps/portal#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/murshidazher/employee-manager-ui.git",
+    "directory": "apps/portal"
+  },
+  "bugs": "https://github.com/murshidazher/employee-manager-ui/issues",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -26,5 +35,9 @@
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4"
-  }
+  },
+  "keywords": [
+    "portal",
+    "management-portal"
+  ]
 }

@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[portal](https://github.com/murshidazher/employee-manager-ui/tree/main/apps/portal) ![Package version](https://img.shields.io/github/package-json/v/murshidazher/employee-manager-ui?filename=apps%2Fportal%2Fpackage.json\&label=%20\&color=0080FF)
 
 ## Getting Started
 

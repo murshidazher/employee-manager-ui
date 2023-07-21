@@ -2,6 +2,15 @@
   "name": "@murshidazher/employee-manager-ui-button",
   "version": "0.5.0-beta",
   "main": "src/index.tsx",
+  "description": "The button component",
+  "author": "Murshid Azher <hello@murshidazher.com>",
+  "homepage": "https://github.com/murshidazher/employee-manager-ui/tree/main/packages/button#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/murshidazher/employee-manager-ui.git",
+    "directory": "packages/button"
+  },
+  "bugs": "https://github.com/murshidazher/employee-manager-ui/issues",
   "scripts": {
     "publish-package": "npm publish --access public"
   },
@@ -14,10 +23,9 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "repository": "https://github.com/murshidazher/employee-manager-ui",
-  "author": "Murshid Azher <hello@murshidazher.com> (https://github.com/murshidazher)",
-  "bugs": {
-    "url": "https://github.com/murshidazher/employee-manager-ui/issues"
-  },
-  "homepage": "https://github.com/murshidazher/employee-manager-ui#readme"
+  "keywords": [
+    "button",
+    "component",
+    "ui-component"
+  ]
 }
