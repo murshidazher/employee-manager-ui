@@ -1,6 +1,6 @@
 import { fontSans } from "@murshidazher/employee-manager-ui-lib";
 
-import "./globals.css";
+import "@/styles/globals.css";
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
