@@ -75,10 +75,10 @@ pnpm portal:dev
 - [x] NextJS
 - [ ] React hooks
 - [ ] Tests: Jest
-- [ ] Tailwind CSS
-- [ ] Code Linter
+- [x] Tailwind CSS
+- [x] Code Linter
 - [ ] (Bonus) Redux.
-- [ ] (Bonus) Typescript.
+- [x] (Bonus) Typescript.
 - [ ] (Bonus) Unit tests for NodeJS API
 - [ ] (Bonus) Documentation
 
