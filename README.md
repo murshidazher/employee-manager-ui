@@ -41,7 +41,6 @@ pnpm portal:dev
 ## Product Requirements
 
 - [ ] As Manager, I should see the list of employees.
-  - [ ] I should be navigated to <http://localhost:{PORT}/employee/list>
   - [ ] I should have the option to change the layout from list view to grid view and vice versa.
   - [ ] I should see the initial seed employee list in the database.
 - [ ] As Manager, I should to see the first 10 employees, with the ability to paginate.
