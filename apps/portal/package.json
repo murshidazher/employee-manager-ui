@@ -12,15 +12,15 @@
   },
   "bugs": "https://github.com/murshidazher/employee-manager-ui/issues",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
   },
   "dependencies": {
-    "@next/font": "13.1.6",
     "@murshidazher/employee-manager-ui": "workspace:*",
     "@murshidazher/employee-manager-ui-lib": "workspace:*",
+    "@next/font": "13.1.6",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
@@ -37,7 +37,7 @@
     "tailwindcss": "^3.2.4"
   },
   "keywords": [
-    "portal",
-    "management-portal"
+    "management-portal",
+    "portal"
   ]
 }

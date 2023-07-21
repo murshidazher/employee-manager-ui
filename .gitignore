@@ -1,0 +1,41 @@
+.DS_Store
+node_modules
+dist
+coverage
+*.log
+
+.idea
+
+# local config for neovim
+.nvimrc
+.npmrc
+yarn.lock
+package-lock.json
+
+# VIM
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# exclude log files
+tmp/*[.json, .log]
+
+# local config files
+**/*.local.ts
+
+# dotenv environment variables file
+.env*
+.env.test
+.env.prod
+junit.xml
+
+# eslint
+.eslintcache
+
+# deta.sh
+.deta
+
+# test files
+jest-global-config.json

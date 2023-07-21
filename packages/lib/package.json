@@ -1,7 +1,6 @@
 {
   "name": "@murshidazher/employee-manager-ui-lib",
-  "version": "0.5.0-beta",
-  "main": "src/index.ts",
+  "version": "0.5.0-development",
   "description": "The common utility functions",
   "author": "Murshid Azher <hello@murshidazher.com>",
   "homepage": "https://github.com/murshidazher/employee-manager-ui/tree/main/packages/lib#readme",
@@ -10,13 +9,14 @@
     "url": "https://github.com/murshidazher/employee-manager-ui.git",
     "directory": "packages/lib"
   },
-  "bugs": "https://github.com/murshidazher/employee-manager-ui/issues",
-  "scripts": {
-    "publish-package": "npm publish --access public"
-  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
+  },
+  "bugs": "https://github.com/murshidazher/employee-manager-ui/issues",
+  "main": "src/index.ts",
+  "scripts": {
+    "publish-package": "npm publish --access public"
   },
   "dependencies": {
     "@next/font": "13.1.6",

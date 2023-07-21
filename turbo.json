@@ -2,5 +2,13 @@
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "publish-package": {}
-  }
+  },
+  "globalDependencies": [
+    ".eslintrc",
+    ".eslintignore",
+    ".prettierrc",
+    "tsconfig.base.json",
+    "tsconfig.build.json",
+    "tsconfig.json"
+  ]
 }

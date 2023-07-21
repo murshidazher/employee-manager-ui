@@ -1,7 +1,6 @@
 {
   "name": "@murshidazher/employee-manager-ui-input",
-  "version": "0.5.0-beta",
-  "main": "src/index.tsx",
+  "version": "0.5.0-development",
   "description": "The input component",
   "author": "Murshid Azher <hello@murshidazher.com>",
   "homepage": "https://github.com/murshidazher/employee-manager-ui/tree/main/packages/input#readme",
@@ -10,7 +9,12 @@
     "url": "https://github.com/murshidazher/employee-manager-ui.git",
     "directory": "packages/input"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "bugs": "https://github.com/murshidazher/employee-manager-ui/issues",
+  "main": "src/index.tsx",
   "scripts": {
     "publish-package": "npm publish --access public"
   },
@@ -18,13 +22,9 @@
     "@murshidazher/employee-manager-ui-lib": "workspace:*",
     "react": "^18.2.0"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
   "keywords": [
-    "input",
     "component",
+    "input",
     "ui-component"
   ]
 }

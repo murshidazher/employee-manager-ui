@@ -1,0 +1,17 @@
+.DS_Store
+node_modules
+.nyc_output
+dist
+docs
+
+public/
+build/
+dist/
+
+index.html
+postcss.config.js
+tailwind.config.js
+
+global.d.ts
+next-env.d.ts
+
