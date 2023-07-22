@@ -37,6 +37,9 @@ npm install -g pnpm
 
 ```sh
 pnpm i
+# copy the .env.example and specify the url
+pnpm cpy-env
+# run the development server
 pnpm dev
 ```
 

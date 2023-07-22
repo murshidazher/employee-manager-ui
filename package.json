@@ -9,6 +9,7 @@
     "lint:fix": "eslint --cache --fix .",
     "lint:prettier": "prettier --check .",
     "lint:prettier:fix": "prettier --write .",
+    "cpy-env": "pnpm exec cp apps/portal/.env.example apps/portal/.env",
     "publish-packages": "pnpm turbo run publish-package"
   },
   "dependencies": {
