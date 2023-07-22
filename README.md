@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/murshidazher/employee-manager-ui/main/docs/images/black-logo.png" width="50px">
+
 # [employee-manager-ui](https://github.com/murshidazher/employee-manager-ui)
 
 ![Next JS](https://img.shields.io/badge/next-black?logo=next.js&logoColor=white)
@@ -86,7 +88,8 @@ pnpm portal:dev
 
 - More on [nextjs](https://nextjs.org/docs)
 - More on unstyled and accessible components using [RadixUI](https://radix-ui.com/)
-- More on tailwind based styling using [shadcn-ui](https://ui.shadcn.com/docs/)
+- More on tailwind based styling tokens using [shadcn-ui](https://ui.shadcn.com/docs/)
+- Open source logo by [Emily Kleiderer](https://www.figma.com/community/file/1199856293948759707/Landing-Page-Doodles)
 
 ## LICENSE
 
