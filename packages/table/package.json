@@ -1,0 +1,30 @@
+{
+  "name": "@murshidazher/employee-manager-ui-table",
+  "version": "0.5.0-development",
+  "description": "The table component",
+  "author": "Murshid Azher <hello@murshidazher.com>",
+  "homepage": "https://github.com/murshidazher/employee-manager-ui/tree/main/packages/table#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/murshidazher/employee-manager-ui.git",
+    "directory": "packages/table"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "bugs": "https://github.com/murshidazher/employee-manager-ui/issues",
+  "main": "src/index.tsx",
+  "scripts": {
+    "publish-package": "npm publish --access public"
+  },
+  "dependencies": {
+    "@murshidazher/employee-manager-ui-lib": "workspace:*",
+    "react": "^18.2.0"
+  },
+  "keywords": [
+    "component",
+    "table",
+    "ui-component"
+  ]
+}

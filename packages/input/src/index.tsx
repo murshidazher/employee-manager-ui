@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@murshidazher/employee-manager-ui-lib";
 import * as React from "react";
 

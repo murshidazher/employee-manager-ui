@@ -1,0 +1,31 @@
+{
+  "name": "@murshidazher/employee-manager-ui-avatar",
+  "version": "0.5.0-development",
+  "description": "The avatar component",
+  "author": "Murshid Azher <hello@murshidazher.com>",
+  "homepage": "https://github.com/murshidazher/employee-manager-ui/tree/main/packages/avatar#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/murshidazher/employee-manager-ui.git",
+    "directory": "packages/avatar"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "bugs": "https://github.com/murshidazher/employee-manager-ui/issues",
+  "main": "src/index.tsx",
+  "scripts": {
+    "publish-package": "npm publish --access public"
+  },
+  "dependencies": {
+    "@murshidazher/employee-manager-ui-lib": "workspace:*",
+    "@radix-ui/react-avatar": "^1.0.3",
+    "react": "^18.2.0"
+  },
+  "keywords": [
+    "avatar",
+    "component",
+    "ui-component"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@murshidazher/employee-manager-ui-icons",
+  "version": "0.5.0-development",
+  "description": "The icons component",
+  "author": "Murshid Azher <hello@murshidazher.com>",
+  "homepage": "https://github.com/murshidazher/employee-manager-ui/tree/main/packages/icons#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/murshidazher/employee-manager-ui.git",
+    "directory": "packages/icons"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "bugs": "https://github.com/murshidazher/employee-manager-ui/issues",
+  "main": "src/index.tsx",
+  "scripts": {
+    "publish-package": "npm publish --access public"
+  },
+  "dependencies": {
+    "@murshidazher/employee-manager-ui-lib": "workspace:*",
+    "react": "^18.2.0"
+  },
+  "keywords": [
+    "component",
+    "icons",
+    "ui-component"
+  ]
+}

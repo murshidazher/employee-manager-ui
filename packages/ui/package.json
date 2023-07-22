@@ -19,10 +19,25 @@
     "publish-package": "npm publish --access public"
   },
   "dependencies": {
+    "@murshidazher/employee-manager-ui-avatar": "workspace:*",
+    "@murshidazher/employee-manager-ui-badge": "workspace:*",
     "@murshidazher/employee-manager-ui-button": "workspace:*",
+    "@murshidazher/employee-manager-ui-card": "workspace:*",
+    "@murshidazher/employee-manager-ui-checkbox": "workspace:*",
+    "@murshidazher/employee-manager-ui-command": "workspace:*",
+    "@murshidazher/employee-manager-ui-dialog": "workspace:*",
+    "@murshidazher/employee-manager-ui-dropdown-menu": "workspace:*",
+    "@murshidazher/employee-manager-ui-icons": "workspace:*",
     "@murshidazher/employee-manager-ui-input": "workspace:*",
     "@murshidazher/employee-manager-ui-label": "workspace:*",
-    "@murshidazher/employee-manager-ui-lib": "workspace:*"
+    "@murshidazher/employee-manager-ui-lib": "workspace:*",
+    "@murshidazher/employee-manager-ui-popover": "workspace:*",
+    "@murshidazher/employee-manager-ui-select": "workspace:*",
+    "@murshidazher/employee-manager-ui-separator": "workspace:*",
+    "@murshidazher/employee-manager-ui-table": "workspace:*",
+    "@murshidazher/employee-manager-ui-tabs": "workspace:*",
+    "@murshidazher/employee-manager-ui-toast": "workspace:*",
+    "@murshidazher/employee-manager-ui-toggle": "workspace:*"
   },
   "keywords": [
     "components",

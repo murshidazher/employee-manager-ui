@@ -1,0 +1,33 @@
+{
+  "name": "@murshidazher/employee-manager-ui-toast",
+  "version": "0.5.0-development",
+  "description": "The toast component",
+  "author": "Murshid Azher <hello@murshidazher.com>",
+  "homepage": "https://github.com/murshidazher/employee-manager-ui/tree/main/packages/toast#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/murshidazher/employee-manager-ui.git",
+    "directory": "packages/toast"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "bugs": "https://github.com/murshidazher/employee-manager-ui/issues",
+  "main": "src/index.ts",
+  "scripts": {
+    "publish-package": "npm publish --access public"
+  },
+  "dependencies": {
+    "@murshidazher/employee-manager-ui-lib": "workspace:*",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@radix-ui/react-toast": "^1.1.4",
+    "class-variance-authority": "^0.4.0",
+    "react": "^18.2.0"
+  },
+  "keywords": [
+    "component",
+    "toast",
+    "ui-component"
+  ]
+}
