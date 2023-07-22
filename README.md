@@ -1,4 +1,4 @@
-<img src="./docs/images/black-logo.png" width="90px">
+<img src="https://raw.githubusercontent.com/murshidazher/employee-manager-ui/main/docs/images/black-logo.png" width="90px">
 
 # [employee-manager-ui](https://github.com/murshidazher/employee-manager-ui)
 
