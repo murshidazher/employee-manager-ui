@@ -57,9 +57,7 @@ pnpm dev
   - [ ] Phone number
   - [ ] Gender
   - [ ] Edit/Delete button on each row at the end of the row.
-- [ ] As Manager, I should to filter absences by type.
 - [ ] As Manager, I should to see a loading state until the list is available.
-- [ ] As Manager, I should to see an error state if the list is unavailable.
 - [ ] As Manager, I should to see an empty state if there are no results.
 - [ ] (Bonus) As Manager, I should to sort employees by each attributes.
   - [ ] First name
