@@ -1,5 +1,5 @@
 {
-  "extends": "@tsconfig/node-lts-strictest/tsconfig.json",
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     /* Basic Options */
     "incremental": true,
@@ -22,6 +22,7 @@
     "emitDecoratorMetadata": false,
 
     /* Common Options */
+    "jsx": "preserve",
     "target": "es2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "skipLibCheck": true,
