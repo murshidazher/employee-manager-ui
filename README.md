@@ -37,7 +37,7 @@ npm install -g pnpm
 
 ```sh
 pnpm i
-pnpm portal:dev
+pnpm dev
 ```
 
 ## Product Requirements
@@ -83,6 +83,7 @@ pnpm portal:dev
 - [x] (Bonus) Typescript.
 - [ ] (Bonus) Unit tests for NodeJS API
 - [ ] (Bonus) Documentation
+- [ ] (Bonus) Responsiveness
 
 ## Additional Resources
 
