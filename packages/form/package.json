@@ -1,0 +1,34 @@
+{
+  "name": "@murshidazher/employee-manager-ui-form",
+  "version": "0.5.0-development",
+  "description": "The form component",
+  "author": "Murshid Azher <hello@murshidazher.com>",
+  "homepage": "https://github.com/murshidazher/employee-manager-ui/tree/main/packages/form#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/murshidazher/employee-manager-ui.git",
+    "directory": "packages/form"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "bugs": "https://github.com/murshidazher/employee-manager-ui/issues",
+  "main": "src/index.tsx",
+  "scripts": {
+    "publish-package": "npm publish --access public"
+  },
+  "dependencies": {
+    "@murshidazher/employee-manager-ui-label": "workspace:*",
+    "@murshidazher/employee-manager-ui-lib": "workspace:*",
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-slot": "^1.0.2",
+    "react": "^18.2.0",
+    "react-hook-form": "^7.44.2"
+  },
+  "keywords": [
+    "component",
+    "form",
+    "ui-component"
+  ]
+}

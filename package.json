@@ -3,18 +3,19 @@
   "version": "0.5.0-development",
   "private": true,
   "scripts": {
+    "cpy-env": "pnpm exec cp apps/portal/.env.example apps/portal/.env",
     "dev": "pnpm --filter portal dev",
     "format:mismatches": "syncpack fix-mismatches --filter '@murshidazher'",
     "format:packages": "syncpack format",
     "lint:fix": "eslint --cache --fix .",
     "lint:prettier": "prettier --check .",
     "lint:prettier:fix": "prettier --write .",
-    "cpy-env": "pnpm exec cp apps/portal/.env.example apps/portal/.env",
     "publish-packages": "pnpm turbo run publish-package"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
     "@radix-ui/react-accessible-icon": "^1.0.3",
+    "@radix-ui/react-alert-dialog": "^1.0.4",
     "@radix-ui/react-avatar": "^1.0.3",
     "@radix-ui/react-checkbox": "^1.0.4",
     "@radix-ui/react-context-menu": "^2.1.4",

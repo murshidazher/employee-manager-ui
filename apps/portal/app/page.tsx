@@ -1,9 +1,11 @@
-"use client";
-
 import { Button } from "@murshidazher/employee-manager-ui";
 
-const Home = () => {
-  return <Button>Hello! World.</Button>;
+const IndexPage = () => {
+  return (
+    <div className="container relative">
+      <Button>Hello! World.</Button>
+    </div>
+  );
 };
 
-export default Home;
+export default IndexPage;

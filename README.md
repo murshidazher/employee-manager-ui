@@ -46,31 +46,31 @@ pnpm dev
 ## Product Requirements
 
 - [ ] As Manager, I should see the list of employees.
-  - [ ] I should have the option to change the layout from list view to grid view and vice versa.
+  - [x] I should have the option to change the layout from list view to grid view and vice versa.
   - [ ] I should see the initial seed employee list in the database.
-- [ ] As Manager, I should to see the first 10 employees, with the ability to paginate.
-- [ ] As Manager, I should to see a total number of employees.
-- [ ] As Manager, I should to see the following attributes for each employee:
-  - [ ] First name
-  - [ ] Last name
-  - [ ] Email address
-  - [ ] Phone number
-  - [ ] Gender
-  - [ ] Edit/Delete button on each row at the end of the row.
+- [x] As Manager, I should to see the first 10 employees, with the ability to paginate.
+- [x] As Manager, I should to see a total number of employees.
+- [x] As Manager, I should to see the following attributes for each employee:
+  - [x] First name
+  - [x] Last name
+  - [x] Email address
+  - [x] Phone number
+  - [x] Gender
+  - [x] Edit/Delete button on each row at the end of the row.
 - [ ] As Manager, I should to see a loading state until the list is available.
-- [ ] As Manager, I should to see an empty state if there are no results.
-- [ ] (Bonus) As Manager, I should to sort employees by each attributes.
-  - [ ] First name
-  - [ ] Last name
-  - [ ] Email address
-  - [ ] Phone number
-  - [ ] Gender
-- [ ] (Bonus) As Manager, I should to search employees by each attributes.
-  - [ ] First name
-  - [ ] Last name
-  - [ ] Email address
-  - [ ] Phone number
-  - [ ] Gender
+- [x] As Manager, I should to see an empty state if there are no results.
+- [x] (Bonus) As Manager, I should to sort employees by each attributes.
+  - [x] First name
+  - [x] Last name
+  - [x] Email address
+  - [x] Phone number
+  - [x] Gender
+- [x] (Bonus) As Manager, I should to search employees by each attributes.
+  - [x] First name
+  - [x] Last name
+  - [x] Email address
+  - [x] Phone number
+  - [x] Gender
 - [ ] (Bonus) Host the website on the service of your choice (Render, AWS, GCloud, ...).
 
 ## Tech Requirements
@@ -82,8 +82,8 @@ pnpm dev
 - [x] Code Linter
 - [ ] (Bonus) Redux.
 - [x] (Bonus) Typescript.
-- [ ] (Bonus) Unit tests for NodeJS API
-- [ ] (Bonus) Documentation
+- [x] (Bonus) Unit tests for NodeJS API
+- [x] (Bonus) Documentation
 - [ ] (Bonus) Responsiveness
 
 ## Additional Resources

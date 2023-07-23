@@ -36,6 +36,7 @@
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/array-type": ["error", { "default": "generic" }],
     "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/consistent-type-assertions": "off",
     "no-console": "error",
     "react/jsx-no-bind": [2, { "allowArrowFunctions": true }],
     "react/jsx-filename-extension": [
