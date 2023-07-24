@@ -29,12 +29,12 @@ export const columns: Array<ColumnDef<Employee>> = [
         <Avatar className="h-9 w-9 rounded-sm">
           <AvatarImage
             src={row.getValue("photo")}
-            alt={row.getValue("first_name")}
+            alt={row.getValue("firstName")}
           />
           <AvatarFallback>
             {getFirstTwoInitials(
-              row.getValue("first_name"),
-              row.getValue("last_name")
+              row.getValue("firstName"),
+              row.getValue("lastName")
             )}
           </AvatarFallback>
         </Avatar>
@@ -44,7 +44,7 @@ export const columns: Array<ColumnDef<Employee>> = [
     enableHiding: false,
   },
   {
-    accessorKey: "first_name",
+    accessorKey: "firstName",
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="First name" />
     ),
@@ -52,14 +52,14 @@ export const columns: Array<ColumnDef<Employee>> = [
       return (
         <div className="flex space-x-2">
           <span className="max-w-[500px] truncate font-medium">
-            {row.getValue("first_name")}
+            {row.getValue("firstName")}
           </span>
         </div>
       );
     },
   },
   {
-    accessorKey: "last_name",
+    accessorKey: "lastName",
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Last name" />
     ),
@@ -67,7 +67,7 @@ export const columns: Array<ColumnDef<Employee>> = [
       return (
         <div className="flex space-x-2">
           <span className="max-w-[500px] truncate font-medium">
-            {row.getValue("last_name")}
+            {row.getValue("lastName")}
           </span>
         </div>
       );
@@ -113,7 +113,7 @@ export const columns: Array<ColumnDef<Employee>> = [
 
       return (
         <div className="flex space-x-2">
-          {label && <Badge variant="outline">{label.label}</Badge>}
+          {label != null && <Badge variant="outline">{label.label}</Badge>}
         </div>
       );
     },

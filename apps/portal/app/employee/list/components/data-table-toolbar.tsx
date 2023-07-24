@@ -22,10 +22,10 @@ export function DataTableToolbar<TData>({
         <Input
           placeholder="Filter employees..."
           value={
-            (table.getColumn("first_name")?.getFilterValue() as string) ?? ""
+            (table.getColumn("firstName")?.getFilterValue() as string) ?? ""
           }
           onChange={(event) =>
-            table.getColumn("first_name")?.setFilterValue(event.target.value)
+            table.getColumn("firstName")?.setFilterValue(event.target.value)
           }
           className="h-8 w-[150px] lg:w-[250px]"
         />
@@ -40,7 +40,7 @@ export function DataTableToolbar<TData>({
           </Button>
         )}
       </div>
-      <div className="flex flex-row justify-center items-center">
+      <div className="flex flex-row items-center justify-center">
         <Link href={"/employee/add"}>
           <Button className="mr-2 h-8">
             <PlusCircledIcon className="mr-2 h-4 w-4" />

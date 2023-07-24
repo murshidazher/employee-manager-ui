@@ -1,5 +1,7 @@
 "use client";
 
+import useApi from "@/hooks/api";
+import { deleteEmployee } from "@/services/employee/delete-employee";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -14,12 +16,26 @@ import {
 } from "@murshidazher/employee-manager-ui";
 import { Pencil, Trash2 } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import React from "react";
+
+import { useEmployeeList } from "../context/employee-list";
 
 interface DataTableRowActionsProps {
   id: string;
 }
 
 export function DataTableRowActions({ id }: DataTableRowActionsProps) {
+  const { execute: deleteEmployeeFn } = useApi<unknown>(deleteEmployee);
+  const { updated, setUpdated } = useEmployeeList();
+  const router = useRouter();
+
+  const handleOnDelete = async (id: string) => {
+    deleteEmployeeFn(id);
+    setUpdated(!updated);
+    await router.push("/");
+  };
+
   return (
     <div className="flex flex-row">
       <Link href={`/employee/edit/${id}`}>
@@ -45,7 +61,9 @@ export function DataTableRowActions({ id }: DataTableRowActionsProps) {
             </AlertDialogHeader>
             <AlertDialogFooter>
               <AlertDialogCancel>Cancel</AlertDialogCancel>
-              <AlertDialogAction>Continue</AlertDialogAction>
+              <AlertDialogAction onClick={async () => await handleOnDelete(id)}>
+                Continue
+              </AlertDialogAction>
             </AlertDialogFooter>
           </AlertDialogContent>
         </AlertDialog>

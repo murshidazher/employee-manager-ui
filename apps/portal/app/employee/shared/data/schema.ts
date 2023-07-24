@@ -3,12 +3,14 @@ import { z } from "zod";
 // We're keeping a simple non-relational schema here.
 export const employeeSchema = z.object({
   id: z.string(),
-  first_name: z.string(),
-  last_name: z.string(),
+  firstName: z.string(),
+  lastName: z.string(),
   email: z.string().email(),
   number: z.string(),
   gender: z.string().regex(/^M|F$/, { message: "Gender must be 'M' or 'F'" }),
   photo: z.string().url(),
+  createdAt: z.date(),
+  updatedAt: z.date(),
 });
 
 export const employeeAddFormSchema = z.object({

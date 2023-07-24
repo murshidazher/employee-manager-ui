@@ -23,12 +23,12 @@ export const EmployeeProfileCard = ({
   className,
   ...props
 }: EmployeeProfileCardProps) => {
-  const name = `${profile.first_name} ${profile.last_name}`;
+  const name = `${profile.firstName} ${profile.lastName}`;
   const genderLabel = genders.find((data) => data.value === profile.gender);
 
   return (
     <Card className={cn("grid gap-1", className)}>
-      <div className="rounded-t-lg h-[240px] overflow-hidden">
+      <div className="h-[240px] overflow-hidden rounded-t-lg">
         <Avatar
           className={cn(
             "h-auto w-auto rounded-none object-cover object-center transition-all hover:scale-105"
@@ -36,16 +36,16 @@ export const EmployeeProfileCard = ({
         >
           <AvatarImage src={profile.photo} alt={name} />
           <AvatarFallback>
-            {getFirstTwoInitials(profile.first_name, profile.last_name)}
+            {getFirstTwoInitials(profile.firstName, profile.lastName)}
           </AvatarFallback>
         </Avatar>
       </div>
       <div className="flex flex-col space-y-1.5 p-6">
         <div className="font-semibold leading-none tracking-tight">
-          {`${profile.first_name} ${profile.last_name}`}
+          {`${profile.firstName} ${profile.lastName}`}
         </div>
-        <div className="text-sm text-muted-foreground">{profile.email}</div>
-        <div className="text-sm text-muted-foreground">{profile.number}</div>
+        <div className="text-muted-foreground text-sm">{profile.email}</div>
+        <div className="text-muted-foreground text-sm">{profile.number}</div>
         <Badge variant="outline" className="w-fit">
           {genderLabel?.label}
         </Badge>

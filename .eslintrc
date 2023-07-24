@@ -7,9 +7,9 @@
   },
   "extends": [
     "standard-with-typescript",
+    "next/core-web-vitals",
     "plugin:security/recommended",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
@@ -23,7 +23,6 @@
   "plugins": [
     "@typescript-eslint",
     "react",
-    "react-hooks",
     "jsx-a11y",
     "security",
     "import",
@@ -37,6 +36,7 @@
     "@typescript-eslint/array-type": ["error", { "default": "generic" }],
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/consistent-type-assertions": "off",
+    "@typescript-eslint/no-misused-promises": "off",
     "no-console": "error",
     "react/jsx-no-bind": [2, { "allowArrowFunctions": true }],
     "react/jsx-filename-extension": [
@@ -89,10 +89,41 @@
     }
   },
   "overrides": [
+    // Configuration for TypeScript files
     {
       "files": ["*.ts", "*.tsx"],
+      "plugins": [
+        "@typescript-eslint",
+        "tailwindcss",
+      ],
+      "extends": [
+        "plugin:tailwindcss/recommended",
+        "next/core-web-vitals",
+        "plugin:prettier/recommended"
+      ],
       "rules": {
-        "no-undef": "off"
+        "no-undef": "off",
+        "tailwindcss/no-custom-classname": "off",
+      }
+    },
+    // Configuration for testing
+    {
+      "files": ["**/*.test.ts", "**/*.test.tsx"],
+      "plugins": ["jest", "jest-formatting", "testing-library", "jest-dom"],
+      "extends": [
+        "plugin:jest/recommended",
+        "plugin:jest-formatting/recommended",
+        "plugin:testing-library/react",
+        "plugin:jest-dom/recommended"
+      ]
+    },
+    // Configuration for e2e testing (Cypress)
+    {
+      "files": ["cypress/**/*.ts"],
+      "plugins": ["cypress"],
+      "extends": ["plugin:cypress/recommended"],
+      "parserOptions": {
+        "project": "./cypress/tsconfig.json"
       }
     }
   ]

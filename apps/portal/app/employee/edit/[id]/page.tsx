@@ -1,5 +1,6 @@
-import { UpsertEmployeeProfileView } from "@/app/employee/shared/components/upsert-employee-profile-view";
 import { Metadata } from "next";
+
+import DataEditView from "./components/data-edit-view";
 
 export const metadata: Metadata = {
   title: "Edit employee",
@@ -30,9 +31,7 @@ const EditPage = ({ params }: EditPageProps) => {
             </p>
           </div>
         </div>
-        <div className="mt2">
-          <UpsertEmployeeProfileView />
-        </div>
+        <DataEditView id={id} />
       </div>
     </>
   );

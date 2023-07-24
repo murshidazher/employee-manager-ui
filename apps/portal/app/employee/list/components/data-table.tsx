@@ -125,7 +125,7 @@ export const DataTable = <TData, TValue>({
         </TabsContent>
         <TabsContent value="grid">
           {table.getRowModel()?.rows?.length ? (
-            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 gap-8 md:grid-cols-3 xl:grid-cols-4">
               {table.getRowModel().rows.map((row) => (
                 <EmployeeProfileCard
                   key={row.id}

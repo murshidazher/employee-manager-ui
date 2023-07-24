@@ -2,9 +2,9 @@ import { siteConfig } from "@/config/site";
 
 export const SiteFooter = () => {
   return (
-    <footer className="border border-solid border-input py-6 md:px-8 md:py-0">
+    <footer className="border-input border border-solid py-6 md:px-8 md:py-0">
       <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
-        <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
+        <p className="text-muted-foreground text-center text-sm leading-loose md:text-left">
           Built by{" "}
           <a
             href={siteConfig.author.site}

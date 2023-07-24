@@ -45,9 +45,9 @@ pnpm dev
 
 ## Product Requirements
 
-- [ ] As Manager, I should see the list of employees.
+- [x] As Manager, I should see the list of employees.
   - [x] I should have the option to change the layout from list view to grid view and vice versa.
-  - [ ] I should see the initial seed employee list in the database.
+  - [x] I should see the initial seed employee list in the database.
 - [x] As Manager, I should to see the first 10 employees, with the ability to paginate.
 - [x] As Manager, I should to see a total number of employees.
 - [x] As Manager, I should to see the following attributes for each employee:
@@ -57,7 +57,7 @@ pnpm dev
   - [x] Phone number
   - [x] Gender
   - [x] Edit/Delete button on each row at the end of the row.
-- [ ] As Manager, I should to see a loading state until the list is available.
+- [x] As Manager, I should to see a loading state until the list is available.
 - [x] As Manager, I should to see an empty state if there are no results.
 - [x] (Bonus) As Manager, I should to sort employees by each attributes.
   - [x] First name
@@ -76,8 +76,8 @@ pnpm dev
 ## Tech Requirements
 
 - [x] NextJS
-- [ ] React hooks
-- [ ] Tests: Jest
+- [x] React hooks
+- [x] Tests: Jest
 - [x] Tailwind CSS
 - [x] Code Linter
 - [ ] (Bonus) Redux.
@@ -92,6 +92,7 @@ pnpm dev
 - More on unstyled and accessible components using [RadixUI](https://radix-ui.com/)
 - More on tailwind based styling tokens using [shadcn-ui](https://ui.shadcn.com/docs/)
 - Open source logo by [Emily Kleiderer](https://www.figma.com/community/file/1199856293948759707/Landing-Page-Doodles)
+- [Testing for nextjs](https://nextjs.org/docs/pages/building-your-application/optimizing/testing#jest-and-react-testing-library)
 
 ## LICENSE
 

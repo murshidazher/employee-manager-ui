@@ -1,5 +1,8 @@
 "use client";
 
+import useApi from "@/hooks/api";
+import { addEmployee } from "@/services/employee/add-employee";
+import { updateEmployee } from "@/services/employee/update-employee";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
   Button,
@@ -17,6 +20,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@murshidazher/employee-manager-ui";
+import { useRouter } from "next/navigation";
 import { useCallback } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
@@ -31,6 +35,11 @@ interface UpsertEmployeeProfileProps {
 }
 
 const UpsertEmployeeProfileView = ({ profile }: UpsertEmployeeProfileProps) => {
+  const { execute: addEmployeePayload } = useApi<unknown>(addEmployee);
+  const { execute: updateEmployeePayload } = useApi<unknown>(updateEmployee);
+
+  const router = useRouter();
+
   const form = useForm<EmployeeAddForm>({
     resolver: zodResolver(employeeAddFormSchema),
     defaultValues: profile,
@@ -38,8 +47,15 @@ const UpsertEmployeeProfileView = ({ profile }: UpsertEmployeeProfileProps) => {
 
   const onSubmit: SubmitHandler<EmployeeAddForm> = useCallback(
     async (value) => {
-      // eslint-disable-next-line no-console
-      console.log(value);
+      if (!profile) {
+        // add
+        addEmployeePayload(value);
+      } else {
+        // update
+        updateEmployeePayload(profile.id, value);
+      }
+
+      await router.push("/employee");
     },
     []
   );
@@ -47,10 +63,7 @@ const UpsertEmployeeProfileView = ({ profile }: UpsertEmployeeProfileProps) => {
   return (
     <Card>
       <Form {...form}>
-        <form
-          onSubmit={form.handleSubmit(onSubmit)}
-          className="grid my-8 mx-8 gap-6"
-        >
+        <form onSubmit={form.handleSubmit(onSubmit)} className="m-8 grid gap-6">
           <FormField
             control={form.control}
             name="firstName"
@@ -110,8 +123,11 @@ const UpsertEmployeeProfileView = ({ profile }: UpsertEmployeeProfileProps) => {
               <FormItem>
                 <FormLabel>Gender</FormLabel>
                 <FormControl>
-                  <Select>
-                    <SelectTrigger {...field}>
+                  <Select
+                    onValueChange={field.onChange}
+                    defaultValue={field.value}
+                  >
+                    <SelectTrigger>
                       <SelectValue placeholder="Gender" />
                     </SelectTrigger>
                     <SelectContent>
@@ -124,8 +140,8 @@ const UpsertEmployeeProfileView = ({ profile }: UpsertEmployeeProfileProps) => {
               </FormItem>
             )}
           />
-          <Button type="submit" className="w-full md:w-[200px] md:ml-auto">
-            {profile ? "Add" : "Save"}
+          <Button type="submit" className="w-full md:ml-auto md:w-[200px]">
+            {!profile ? "Add" : "Save"}
           </Button>
         </form>
       </Form>
