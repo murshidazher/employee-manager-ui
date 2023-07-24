@@ -35,6 +35,8 @@ npm install -g pnpm
 
 ### Up and Running
 
+> ⚠️ You need to run the [api](https://github.com/murshidazher/employee-manager-api) to fetch the employees list.
+
 ```sh
 pnpm i
 # copy the .env.example and specify the url
@@ -80,7 +82,7 @@ pnpm dev
 - [x] Tests: Jest
 - [x] Tailwind CSS
 - [x] Code Linter
-- [ ] (Bonus) Redux.
+- [x] (Bonus) Redux or Context.
 - [x] (Bonus) Typescript.
 - [x] (Bonus) Unit tests for NodeJS API
 - [x] (Bonus) Documentation
