@@ -40,7 +40,7 @@
     "tailwindcss-animate": "^1.0.6"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.6.6",
+    "@commitlint/cli": "17.8.1",
     "@ianvs/prettier-plugin-sort-imports": "4.0.2",
     "@newlevelup/commitlint-config": "1.1.11",
     "@newlevelup/editor-config": "~1.0.1",
