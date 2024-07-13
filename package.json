@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "17.6.6",
-    "@ianvs/prettier-plugin-sort-imports": "4.0.2",
+    "@ianvs/prettier-plugin-sort-imports": "4.3.1",
     "@newlevelup/commitlint-config": "1.1.11",
     "@newlevelup/editor-config": "~1.0.1",
     "@newlevelup/syncpack-config": "1.2.0",
